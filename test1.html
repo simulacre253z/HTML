@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML 기본기 다지기</h1>
+
+    <p>첫 번째 문단의 내용</p>
+    <p>두 번째 문단의 내용<br>여기서는 br 태그로 줄바꿈</p>
+    
+    <pre>이건 개발자가 입력한 태그를 그대로 띄워주는 거
+
+        적힌 내용 그대로 보여주는 거
+    띄어쓰기나 줄바꿈 등
+p 태그나 br 태그 대신에 pre 태그로 써도 좋음
+    </pre>
+
+    <!-- 이것은 html의 주석 -->
+
+    <b>이것은 볼드체</b> <br> 
+    <i>이것은 이탤릭체</i> <br>
+    <strong>텍스트를 강하게 표시</strong> <br>
+    <em>텍스트 강조</em> <br>
+
+    <br>
+
+    바로 밑에 나오는 한 줄은 코드 <br>
+    <code>printf("Hello, World!\n");</code> <br>
+    
+    <br>
+
+    위 첨자를 표시할 때는 e<sup>x</sup>와 같이 쓸 수 있다. <br>
+    아래 첨자를 표시할 때는 a<sub>i</sub>와 같이 쓸 수 있다. <br>
+    물론 알아도 필요없는 겁니다. <br>
+
+    <br>
+
+    <hr/>
+
+    ↑ 수평선
+
+    <br><br>
+
+    이것은 번호 없는 리스트이다. 각 리스트 항목 앞에 bullet이 붙는다.
+    <ul>
+        <li> 첫 번째 리스트 항목</li>
+        <li> 두 번째 리스트 항목</li>
+    </ul>
+    
+    이것은 번호 있는 리스트이다. 각 리스트 항목 앞에 번호가 붙는다.
+    <ol>
+        <li> 첫 번째 리스트 항목</li>
+        <li> 두 번째 리스트 항목</li>
+    </ol>
+
+    <a href="https://www.naver.com" target="_blank">네이버 절대경로(target)</a>
+    <a href="https://www.google.com" target="_self">구글 절대경로(self)</a>
+
+    <br><br>
+
+    <img src="images.jpg" width="300" height="200"><br>
+    ※ HTML5에서는 img 태그의 align 속성을 지원 X (CSS 사용)
+    
+    <br><br>
+
+    <table border="1">
+        <caption>
+            <strong>2022년 4월 13일</strong>
+        </caption>
+        <tr>
+            <th>식단 메뉴</th>
+        </tr>
+        <tr>
+            <td>흰쌀밥</td>
+        </tr>
+        <tr>
+            <td>매콤 순살 닭볶음</td>
+        </tr>
+        <tr>
+            <td>동그랑땡 계란전</td>
+        </tr>
+        <tr>
+            <td>메추리알 곤약 조림</td>
+        </tr>
+        <tr>
+            <td>마늘쫑 어묵채 볶음</td>
+        </tr>
+        <tr>
+            <td>신선한 나물</td>
+        </tr>
+        <tr>
+            <td>백김치</td>
+        </tr>
+        <tr>
+            <td>파송송 물만둣국</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>1열</th>
+            <th>2열</th>
+            <th>3열</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+        <tr>
+            <td colspan="3">3행</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <iframe src="test1.html" width="40%" height="50%"></iframe>
+    
+    <br><br>
+
+    <div style="border: 3px solid rgb(255, 60, 60);">
+        <h2>Simulacre</h2>
+        <p>
+            <span style="color: rgb(255, 60, 60);"><strong>시뮬라크르(Simulacre)</strong></span>는 가상, 거짓 그림 등의 뜻을 가진 라틴어 시뮬라크룸에서 유래한 말로 시늉, 흉내, 모의 등의 뜻을 지닌다. 이 라틴어 단어 영어 안에도 그대로 흡수되어서 모조품, 가짜 물건을 가리키는 말로 쓰인다.
+        </p>
+    </div>
+
+    <br>
+
+    <form>
+        <!-- 아이디, 비번의 최대 길이는 20으로 지정 -->
+        ID : <input type="text" name="id" size="20"><br>
+        PW : <input type="password" name="pw" size="20">
+    </form>
+
+    <br>
+
+    <form>
+        성별 :
+        <input type="radio" name="gender" value="male">남
+        <input type="radio" name="gender" value="female">여
+    </form>
+
+    <br>
+
+    <form>
+    카페 메뉴 :
+    <input type="checkbox" name="drinks" value="ame" checked> 아메리카노
+    <input type="checkbox" name="drinks" value="latte"> 카페라떼
+    <input type="checkbox" name="drinks" value="abala"> 아이스 바닐라 라떼
+    </form>
+
+    <br>
+
+    <form>
+        이름 : <input type="text" name="name"><br>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+        <input type="button" value="버튼1" onclick="alert('input 버튼입니다.')">
+        <button type="button" onclick="alert('button 버튼입니다.')">버튼2</button>
+    </form>
+
+    <br>
+
+    <form>
+        사진 : <input type="text" name="name"><br>
+        <input type="image" src="image.jpg" alt="제출버튼">   
+    </form>
+
+    <br>
+
+    <form>
+        내용 : <textarea name="content" rows="3" cols="50"></textarea>
+    </form>
+
+    <br>
+    
+    <form>
+        좋아하는 색깔 : <select name="colors">
+            <option value="red">빨강</option>
+            <option value="white">하양</option>
+            <option value="black" selected>검정</option>
+        </select>
+    </form>
+    
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>인적사항</legend>
+            이름 : <input type="text"> <br>
+            전화번호 : <input type="tel"> <br>
+            주소 : <input type="text"> <br>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <h3>현실 세계 vs 가상 세계</h3>
+    
+    <form>
+        <label form="red", style="color: red">빨간 캡슐</label>
+        <input type="radio" name="red" id="red" value="red">
+        (or)
+        <label form="blue", style="color: blue">파란 캡슐</label>
+        <input type="radio" name="blue" id="blue" value="blue"><br><br>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
